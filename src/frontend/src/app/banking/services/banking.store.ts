@@ -12,7 +12,7 @@ import { addEntity, setEntities, withEntities } from '@ngrx/signals/entities';
 import { BankTransaction } from './types';
 import { BankingService } from './banking.service';
 import { rxMethod } from '@ngrx/signals/rxjs-interop';
-import { pipe, switchMap} from 'rxjs';
+import { pipe, switchMap } from 'rxjs';
 import { tapResponse } from '@ngrx/operators';
 
 type BankState = {

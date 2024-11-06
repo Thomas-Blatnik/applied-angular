@@ -10,5 +10,10 @@ export const routes: Routes = [
     path: 'banking',
     loadChildren: () => import('./banking/banking.routes')
     .then(b => b.BANKING_ROUTES)
-   }
+   },
+   {
+    path: 'counter',
+    loadChildren: () => import('./counter/counter.routes')
+    .then(c => c.COUNTER_ROUTES)
+   },
 ];
