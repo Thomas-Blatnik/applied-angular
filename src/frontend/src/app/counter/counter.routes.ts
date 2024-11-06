@@ -1,5 +1,6 @@
 import { Routes } from "@angular/router";
 import { CounterComponent } from "./counter.component";
+import { UiComponent } from "./pages/ui.component";
 
 export const COUNTER_ROUTES: Routes = [
     {
@@ -7,10 +8,10 @@ export const COUNTER_ROUTES: Routes = [
       component: CounterComponent,
       providers: [],
       children: [
-        // {
-        //   path: 'dashboard',
-        //   component: DefaultComponent,
-        // },
+        {
+          path: 'ui',
+          component: UiComponent,
+        },
         // {
         //   path: 'deposit',
         //   component: DepositComponent,
