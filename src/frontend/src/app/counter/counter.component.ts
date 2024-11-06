@@ -12,6 +12,9 @@ import { RouterModule } from '@angular/router';
         <div>
             <a routerLink="ui" class="btn btn-primary">UI</a>
         </div>
+        <div>
+            <a routerLink="prefs" class="btn btn-primary">Prefs</a>
+        </div>
         <router-outlet />
       </div>  
     `,
