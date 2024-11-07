@@ -1,15 +1,16 @@
-import { Directive, ElementRef } from "@angular/core";
+import { Directive, ElementRef } from '@angular/core';
 
 @Directive({
-    standalone: true,
-    selector: 'button[appIncrementButton]'
+  standalone: true,
+  selector: 'button[appIncrementButton]',
 })
 export class IncrementButtonDirective {
-
-    constructor(el: ElementRef<HTMLButtonElement>){
-        el.nativeElement.classList.add(
-            'btn','btn-sm','btn-circle','btn-primary'
-        )
-    }
+  constructor(el: ElementRef<HTMLButtonElement>) {
+    el.nativeElement.classList.add(
+      'btn',
+      'btn-sm',
+      'btn-circle',
+      'btn-primary',
+    );
+  }
 }
-

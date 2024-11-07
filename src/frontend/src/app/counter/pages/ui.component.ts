@@ -1,12 +1,11 @@
 import {
-  Component,
   ChangeDetectionStrategy,
-  signal,
+  Component,
   inject,
+  signal,
 } from '@angular/core';
-import { CounterStore } from '../services/counter.store';
 import { DecrementButtonDirective, IncrementButtonDirective } from '@shared';
-
+import { CounterStore } from '../services/counter.store';
 
 @Component({
   selector: 'app-ui',
@@ -23,7 +22,7 @@ import { DecrementButtonDirective, IncrementButtonDirective } from '@shared';
         -
       </button>
       <span data-testid="current">{{ store.current() }}</span>
-      <button (click)="store.increment()" appIncrementButton>+</button>
+      <button appIncrementButton (click)="store.increment()">+</button>
     </div>
 
     <div data-testid="fizzBuzz">{{ store.fizzBuzz() }}</div>
